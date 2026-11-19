@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: queueless-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: DATABASE_URL
+        sync: false          # Supabase session-pooler URI; paste in the Render dashboard
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false          # your Vercel URL, e.g. https://queueless.vercel.app
+      - key: AUTO_CREATE_TABLES
+        value: "false"
+      - key: DEMO_MODE
+        value: "false"
+      - key: ML_ENABLED
+        value: "true"

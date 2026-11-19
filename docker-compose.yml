@@ -1,0 +1,19 @@
+# Database = Supabase (managed), so there is no postgres service here.
+services:
+  api:
+    build: ./backend
+    env_file: .env
+    environment:
+      AUTO_CREATE_TABLES: "false"
+    ports: ["8000:8000"]
+    volumes:
+      - ./backend/models:/srv/models:ro      # swap trained models without rebuilding
+    restart: unless-stopped
+  web:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    ports: ["8080:80"]
+    depends_on: [api]
+    restart: unless-stopped

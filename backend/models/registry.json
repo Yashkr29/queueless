@@ -1,0 +1,204 @@
+[
+  {
+    "model": "wait_time",
+    "version": "wait-gradientboosting-20261118T135424Z",
+    "algorithm": "GradientBoosting",
+    "trained_on": "synthetic",
+    "metrics": {
+      "val": {
+        "MAE": 4.653822092294797,
+        "RMSE": 8.536607075558885,
+        "R2": 0.7478331381552445
+      },
+      "test": {
+        "MAE": 3.491372139113714,
+        "RMSE": 6.4869637128092,
+        "R2": 0.7379690803615709
+      },
+      "test_interval_coverage": 0.8040904198062433,
+      "test_interval_mean_width": 10.59092191901235,
+      "fallback_test": {
+        "MAE": 8.789743007835565,
+        "RMSE": 18.490809382708076,
+        "R2": -1.1290283628642617
+      }
+    },
+    "data": {
+      "rows": 23458,
+      "days": 140,
+      "seed": 42,
+      "split_cutoffs": [
+        "2025-04-14",
+        "2025-05-05"
+      ]
+    },
+    "trained_at": "20261118T135424Z",
+    "note": "SIMULATED-data metrics. Not evidence of real-world accuracy."
+  },
+  {
+    "model": "wait_time",
+    "version": "wait-gradientboosting-20261118T135526Z",
+    "algorithm": "GradientBoosting",
+    "trained_on": "synthetic",
+    "metrics": {
+      "val": {
+        "MAE": 4.653822092294797,
+        "RMSE": 8.536607075558885,
+        "R2": 0.7478331381552445
+      },
+      "test": {
+        "MAE": 3.491372139113714,
+        "RMSE": 6.4869637128092,
+        "R2": 0.7379690803615709
+      },
+      "test_interval_coverage": 0.8040904198062433,
+      "test_interval_mean_width": 10.59092191901235,
+      "fallback_test": {
+        "MAE": 8.738367139832281,
+        "RMSE": 18.466672495027677,
+        "R2": -1.1299356263594817
+      }
+    },
+    "data": {
+      "rows": 23458,
+      "days": 140,
+      "seed": 42,
+      "split_cutoffs": [
+        "2025-04-14",
+        "2025-05-05"
+      ]
+    },
+    "trained_at": "20261118T135526Z",
+    "note": "SIMULATED-data metrics. Not evidence of real-world accuracy."
+  },
+  {
+    "model": "wait_time",
+    "version": "wait-gradientboosting-20261118T135649Z",
+    "algorithm": "GradientBoosting",
+    "trained_on": "synthetic",
+    "metrics": {
+      "val": {
+        "MAE": 4.653822092294797,
+        "RMSE": 8.536607075558885,
+        "R2": 0.7478331381552445
+      },
+      "test": {
+        "MAE": 3.491372139113714,
+        "RMSE": 6.4869637128092,
+        "R2": 0.7379690803615709
+      },
+      "test_interval_coverage": 0.8040904198062433,
+      "test_interval_mean_width": 10.59092191901235,
+      "fallback_test": {
+        "MAE": 8.738367139832281,
+        "RMSE": 18.466672495027677,
+        "R2": -1.1299356263594817
+      }
+    },
+    "data": {
+      "rows": 23458,
+      "days": 140,
+      "seed": 42,
+      "split_cutoffs": [
+        "2025-04-14",
+        "2025-05-05"
+      ]
+    },
+    "trained_at": "20261118T135649Z",
+    "note": "SIMULATED-data metrics. Not evidence of real-world accuracy."
+  },
+  {
+    "model": "demand",
+    "version": "demand-20261118T135704Z",
+    "algorithms": {
+      "30": "GradientBoosting",
+      "60": "XGBoost",
+      "120": "XGBoost"
+    },
+    "trained_on": "synthetic",
+    "metrics": {
+      "30": {
+        "MAE": 1.5917112614913878,
+        "RMSE": 2.0885487015599002,
+        "WAPE": 0.3889799264399827
+      },
+      "60": {
+        "MAE": 2.2000443935394287,
+        "RMSE": 2.858824963639693,
+        "WAPE": 0.27593380212783813
+      },
+      "120": {
+        "MAE": 3.0294995307922363,
+        "RMSE": 3.9572585135719027,
+        "WAPE": 0.20242337882518768
+      }
+    },
+    "trained_at": "20261118T135704Z",
+    "note": "SIMULATED-data metrics."
+  },
+  {
+    "model": "wait_time",
+    "version": "wait-gradientboosting-20261118T142111Z",
+    "algorithm": "GradientBoosting",
+    "trained_on": "synthetic",
+    "metrics": {
+      "val": {
+        "MAE": 4.653822092294797,
+        "RMSE": 8.536607075558885,
+        "R2": 0.7478331381552445
+      },
+      "test": {
+        "MAE": 3.491372139113714,
+        "RMSE": 6.4869637128092,
+        "R2": 0.7379690803615709
+      },
+      "test_interval_coverage": 0.8040904198062433,
+      "test_interval_mean_width": 10.59092191901235,
+      "fallback_test": {
+        "MAE": 8.738367139832281,
+        "RMSE": 18.466672495027677,
+        "R2": -1.1299356263594817
+      }
+    },
+    "data": {
+      "rows": 23458,
+      "days": 140,
+      "seed": 42,
+      "split_cutoffs": [
+        "2025-04-14",
+        "2025-05-05"
+      ]
+    },
+    "trained_at": "20261118T142111Z",
+    "note": "SIMULATED-data metrics. Not evidence of real-world accuracy."
+  },
+  {
+    "model": "demand",
+    "version": "demand-20261118T142127Z",
+    "algorithms": {
+      "30": "GradientBoosting",
+      "60": "XGBoost",
+      "120": "XGBoost"
+    },
+    "trained_on": "synthetic",
+    "metrics": {
+      "30": {
+        "MAE": 1.5917112614913878,
+        "RMSE": 2.0885487015599002,
+        "WAPE": 0.3889799264399827
+      },
+      "60": {
+        "MAE": 2.2000443935394287,
+        "RMSE": 2.858824963639693,
+        "WAPE": 0.27593380212783813
+      },
+      "120": {
+        "MAE": 3.0294995307922363,
+        "RMSE": 3.9572585135719027,
+        "WAPE": 0.20242337882518768
+      }
+    },
+    "trained_at": "20261118T142127Z",
+    "note": "SIMULATED-data metrics."
+  }
+]
